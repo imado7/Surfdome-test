@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html body {
+  font-family: 'Oxygen', sans-serif; }
+
+header a {
+  color: black; }
+  header a:hover {
+    color: black;
+    text-decoration: none; }
+  header a .logo {
+    text-transform: uppercase;
+    font-size: 5vw;
+    padding: 4% 3% 0;
+    text-align: center; }
+header .form-inline {
+  text-align: center;
+  padding: 4% 3%; }
+  header .form-inline .form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #9f9f9f;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 90%; }
+  header .form-inline button {
+    border: none;
+    background-color: transparent;
+    text-shadow: none;
+    color: #9f9f9f;
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1); }
+
+nav.wrapper {
+  display: block;
+  position: relative;
+  z-index: 999; }
+nav ul {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  margin: 0; }
+  nav ul a {
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #aaaaaa;
+    text-align: center; }
+  nav ul li {
+    display: block;
+    font-size: 1.5em;
+    padding: 2% 0; }
+nav [type=checkbox] {
+  visibility: hidden; }
+nav #menu-toggle:checked ~ ul {
+  opacity: 1;
+  height: 100vh;
+  visibility: visible; }
+nav .label-toggle {
+  background: linear-gradient(to bottom, #444444 0%, #444444 20%, transparent 20%, transparent 40%, #444444 40%, #444444 60%, transparent 60%, transparent 80%, #444444 80%, #444444 100%);
+  cursor: pointer;
+  display: block;
+  float: right;
+  height: 35px;
+  margin-top: 1em;
+  width: 35px; }
+
+.container > .row {
+  padding: 0; }
+
+.product-cat {
+  margin-bottom: 2%; }
+  .product-cat img {
+    margin: auto; }
+  .product-cat a {
+    color: white; }
+    .product-cat a h1 {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700; }
+    .product-cat a:hover h1 {
+      color: #aaaaaa; }
+
+.surfdome-news .row [class*='col-'] {
+  float: left;
+  margin-bottom: 3%; }
+.surfdome-news > .row {
+  padding: 0; }
+  .surfdome-news > .row p {
+    text-transform: uppercase;
+    font-weight: 700; }
+  .surfdome-news > .row img {
+    margin-right: 3%; }
+.surfdome-news a {
+  color: black; }
+  .surfdome-news a:hover {
+    text-decoration: none;
+    color: #444444; }
+
+.embed-responsive {
+  margin-top: 5%; }
+
+.footer {
+  background-color: #eee;
+  border-top: 2px solid #bbb;
+  margin-top: 3%;
+  padding: 3% 0 1%;
+  text-align: center; }
+  .footer p {
+    padding-bottom: 2%; }
+    .footer p a {
+      display: block;
+      width: 100%;
+      padding: 2%;
+      color: #444444; }
+      .footer p a:hover {
+        color: #aaaaaa;
+        text-decoration: none; }
+    .footer p span {
+      display: none; }
+
+@media (min-width: 544px) {
+  header a .logo {
+    font-size: 4vw;
+    padding: 3% 3% 0;
+    text-align: center; }
+  header .form-inline {
+    text-align: center;
+    padding: 2% 0; }
+    header .form-inline .form-control {
+      width: 90%; } }
+@media (min-width: 768px) {
+  header a .logo {
+    font-size: 3.2vw;
+    padding: 4% 3%;
+    text-align: left; }
+  header .form-inline {
+    text-align: right;
+    padding: 6% 3% 0; }
+    header .form-inline .form-control {
+      width: auto; }
+
+  nav {
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 20px; }
+    nav ul {
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+      width: 100%;
+      margin: .5% 0;
+      height: auto;
+      opacity: 1;
+      visibility: visible; }
+      nav ul a {
+        text-decoration: none;
+        display: inline-block;
+        border-bottom: none;
+        text-align: center; }
+      nav ul li {
+        display: inline-block;
+        font-size: 1.7vw; }
+    nav #menu-toggle {
+      display: none; }
+    nav .label-toggle {
+      display: none; }
+    nav.wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #aaaaaa;
+      border-top: 1px solid #aaaaaa; }
+
+  .footer p a {
+    display: inline-block;
+    width: auto;
+    padding: 0 2%; }
+  .footer p span {
+    display: inline-block; } }
+@media (min-width: 992px) {
+  .container > .row {
+    padding: 2% 0; }
+
+  .product-cat {
+    margin-bottom: 0; } }

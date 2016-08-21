@@ -1,0 +1,15 @@
+{
+  "name": "Surfdome-test",
+  "version": "0.0.0",
+  "description": "coding test page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "imad maoed",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
